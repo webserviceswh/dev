@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+@font-face{
+	font-family:prelude-l;
+	src:url(Fonts/PreludeFLF-Italic.ttf);
+	font-weight:bold;
+}
+@font-face{
+	font-family:prelude;
+	src:url(Fonts/PreludeFLF-Bolditalic.ttf);
+	font-weight:bold;
+}
+/*colors to use
+rgb(190,153,167) #BE99A7 almost grey
+rgb(157,101,122) #9D657A	purple-grey
+rgb(90,0,34) #5A0022	dark-purple
+rgb(93,0,35) #5D0023	purple
+rgb(255,255,255) #FFFFFF	white
+#362416	brown
+#BF7938	gold
+#CA853B light-gold
+*/
+
+html body{
+  height: 100%;
+}
+body{
+	font-family:'prelude-l','Montserrat', sans-serif;
+    font-size: 230%;
+	font-weight:300;
+	letter-spacing: 0.1em;
+	color:white;
+    margin: 0px;
+    padding: 0px;
+	/*background: #5D0023; /* For browsers that do not support gradients */
+   /* background: -webkit-linear-gradient(#5D0023, #5A0022); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
+	background: rgba(157,101,122,0.1);
+
+    background-position: 0 0;  
+}
+.landing{
+	background: #fff;
+	background: url(Fotos/Frontpage.jpg)no-repeat;
+}
+h1{
+	font-family:'prelude-l', 'Montserrat', sans-serif;
+	color:white;
+	font-size: 230%;
+	font-weight:700;
+	text-align:center;
+	padding-left:10px;
+	letter-spacing: 0.1em;
+}
+h2{
+	font-family: 'prelude-l','Montserrat', sans-serif;
+	color:white;
+	font-size: 380%;
+	font-weight:700;
+	text-align:center;
+	padding-left:10px;
+	margin-top:25%;
+	margin-bottom:5%;
+	letter-spacing: 0.1em;
+}
+h3,h4{
+	font-family: 'prelude-l','Montserrat', sans-serif;
+	font-weight:400;
+	text-align:center;
+	padding-left:10px;
+	margin-top:15px;
+	margin-bottom:10px;
+	letter-spacing: 0.1em;
+	font-size: 1.2em;
+}
+h4{
+	font-size: 1em;
+}
+.text-center{
+	font-size: 170%;
+	letter-spacing: 0.1em;
+}
+#mandala{
+	position: absolute;
+	right:0px;
+	bottom: 0px;
+}
+
+/*.border{
+	padding:2px;
+	box-shadow:0px 0px 0px 1px black inset;
+}*/
+/* Link */
+.navbar{
+	background-color: rgba(90,0,34, 0.6);
+}
+.navbar-default {
+    border:none;
+}
+.navbar-default .navbar-nav > li > a {
+	font-family:'Montserrat', sans-serif;
+	font-weight:300;
+	color:white;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: white;
+    background: none;
+	border-bottom:2px solid white;
+}
+.nav.navbar-nav li a {
+	letter-spacing: 0.2em;
+	opacity:1;
+}
+nav a:hover{
+	font-weight: 400;
+	color:white;
+	border-bottom: 2px solid white;
+	border-bottom-color:white;cursor:pointer;
+}
+nav li:hover{
+	font-weight: 400;
+	color:white;
+}
+.navbar-brand{
+	margin:0;
+	margin-top:5px;
+	padding:0;
+}
+.background{
+	background:white;
+}
+/*Main Landing Page*/
+.main-left {
+	height:970px;
+}
+.main-right{
+	height:970px;
+}
+.overlay{
+	background:rgb(157,101,122);
+	opacity:0.8;
+	height:auto;
+	width:800px;
+    margin: auto;
+	font-size: 1.5em;
+}
+/*Ayurveda*/
+.main-left.ayu{
+	z-index:1;
+}
+.main-right.ayu{
+	background:url('Fotos/Ayurveda.jpg') no-repeat center center;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+    align-items: center; 
+	z-index:2;
+}
+#ayuDescr{
+	transform: translate(-70%);
+	overflow:visible; !important
+}
+.linkButton{
+	background-color: rgba(90,0,34, 0.6);
+	border:none;
+}
+/*navigate to massagen and ernährungsberatung*/
+.anchor{
+	height:70px;
+}
+.wrapper{
+	height:auto;
+	margin: 0em;
+	padding: 0em;
+	background-color:rgba(98,154,133,0.6);
+}
+#massagen{
+	background-color:rgba(157,101,122,0.9);
+}
+#ernaehrung{
+	height:auto;
+}
+/*Bullets*/
+
+/*Yoga*/
+.main-right.yoga{
+	z-index:1;
+}
+.main-left.yoga{
+	background:url('Fotos/yoga.jpg') no-repeat center center;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+    align-items: center; 
+	z-index:2;
+}
+#yogaDescr{
+	transform: translate(+70%);
+	overflow:visible; !important
+}
+
+.background{
+	background: rgba(255, 255, 255,1);
+}
+
+/*media screens*/
+ @media screen and (min-width:1320px){
+	 .landing{
+		margin:0px;
+	 }
+	.two{
+		margin:0px;
+		padding-left:2em;
+		padding-right:2em;
+	 }
+	.one{
+		margin:0px;
+		padding-left:2em;
+		padding-right:2em;
+	}
+}
+/*media screens*/
+ @media screen and (max-width:700px){
+	 .navbar{
+		background-color: rgba(90,0,34,0.9);
+	 }
+	 
+	 #yogaDescr,#ayuDescr{
+		transform: translate(0%);
+	 }
+}
