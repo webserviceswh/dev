@@ -29,7 +29,7 @@ html body{
   height: 100%;
 }
 body{
-	font-family:'prelude-l','Montserrat', sans-serif;
+	font-family:'Montserrat', sans-serif;
     font-size: 230%;
 	font-weight:300;
 	letter-spacing: 0.1em;
@@ -41,13 +41,12 @@ body{
     /*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
     /*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
     /*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
-	background: rgba(157,101,122,0.1);
-
-    background-position: 0 0;  
+	background: rgba(157,101,122,0.1); 
 }
 .landing{
 	background: #fff;
-	background: url(Fotos/Frontpage.jpg)no-repeat;
+	background: url(Fotos/Frontpage2.jpg)center center no-repeat;
+	background-size:cover;
 }
 h1{
 	font-family:'prelude-l', 'Montserrat', sans-serif;
@@ -57,6 +56,11 @@ h1{
 	text-align:center;
 	padding-left:10px;
 	letter-spacing: 0.1em;
+}
+#home h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:200;
+	font-size: 150%;
 }
 h2{
 	font-family: 'prelude-l','Montserrat', sans-serif;
@@ -80,16 +84,18 @@ h3,h4{
 	font-size: 1.2em;
 }
 h4{
-	font-size: 1em;
+	font-family:'Montserrat', sans-serif;
+	font-size: 0.7em;
+	text-align: left;
 }
 .text-center{
 	font-size: 170%;
 	letter-spacing: 0.1em;
 }
 #mandala{
-	position: absolute;
+	position:absolute;
 	right:0px;
-	bottom: 0px;
+	bottom:0px;
 }
 
 /*.border{
@@ -155,7 +161,11 @@ nav li:hover{
 	height:auto;
 	width:800px;
     margin: auto;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	text-align:center;
+}
+.overlay h3{
+	font-size: 1.8em;
 }
 /*Ayurveda*/
 .main-left.ayu{
@@ -185,15 +195,17 @@ nav li:hover{
 	height:auto;
 	margin: 0em;
 	padding: 0em;
-	background-color:rgba(98,154,133,0.6);
+	background-color:rgba(98,154,133,0.4);
 }
 #massagen{
 	background-color:rgba(157,101,122,0.9);
 }
-#ernaehrung{
-	height:auto;
+#massagen h3,#ernaehrung h3{
+	font-size:1.8em;
 }
-/*Bullets*/
+#ernaehrung{
+	text-align: center;
+}
 
 /*Yoga*/
 .main-right.yoga{
@@ -211,14 +223,7 @@ nav li:hover{
 	transform: translate(+70%);
 	overflow:visible; !important
 }
-
-.background{
-	background: rgba(255, 255, 255,1);
-}
-
-/*media screens*/
- @media screen and (min-width:1320px){
-	 .landing{
+ .landing{
 		margin:0px;
 	 }
 	.two{
@@ -231,14 +236,120 @@ nav li:hover{
 		padding-left:2em;
 		padding-right:2em;
 	}
-}
 /*media screens*/
- @media screen and (max-width:700px){
-	 .navbar{
-		background-color: rgba(90,0,34,0.9);
+ @media screen and (max-width:1530px){
+	 #yogaDescr{
+		transform: translate(+50%);
 	 }
-	 
+	 #ayuDescr{
+		transform: translate(-50%);
+	 }
+	 #massagen{
+		word-wrap: break-word;
+	}
+}
+ @media screen and (max-width:1300px){
+	.two{
+		padding-left:1em;
+		padding-right:1em;
+	 }
+	.one{
+		padding-left:1em;
+		padding-right:1em;
+	}
+}
+
+@media screen and (max-width:1199px){
+	 #yogaDescr{
+		transform: translate(+30%);
+	 }
+	 #ayuDescr{
+		transform: translate(-30%);
+	 }
+	.ayu,.yoga{
+		height:800px;
+		padding-top:50px;
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+}
+@media screen and (max-width:991px){
+	.main-right.yoga{
+		display:none;
+	}
+	.main-left.ayu{
+		display:none;
+	}
 	 #yogaDescr,#ayuDescr{
 		transform: translate(0%);
 	 }
+	#manda{
+		height:70%;
+	}
+	.wrapper{
+		background-color:white;
+	}
+	#ernaehrung{
+		padding:0px;
+		padding-top:60px;
+		padding-bottom:60px;
+		background-clip:content-box;
+		background-color:rgba(98,154,133,0.6);
+		text-align: center;
+	}
+	#yoga{
+		padding-top:60px;
+		margin-top:0px;
+		font-size: 0.8em;
+	}
+	#ayu{
+		padding-top:60px;
+		margin-top:0px;
+		font-size: 0.8em;
+		word-wrap: break-word;
+	}
+}
+@media screen and (max-width:750px){
+	.navbar{
+		background-color: rgba(90,0,34,0.9);
+	}
+}
+@media screen and (max-width:575px){
+	.main-left.yoga{
+		padding-top:50px;
+		background:none;
+		word-wrap: break-word;
+	}
+	.main-right.ayu{
+		padding-top:50px;
+		background:none;
+		word-wrap: break-word;
+	}
+	.main-left {
+		padding:0px;
+		height:auto;
+	}
+	.main-right{
+		padding:0px;
+		height:auto;
+	}
+	.two{
+		padding:0px;
+	}
+	.anchor{
+		height:50px;
+	}
+	#manda{
+		display:none;
+	}
+	#massage,#ernaehrung{
+		padding-top:50px;
+		padding-bottom:0px;
+		word-wrap: break-word;
+	}
+	#ayu,#yoga{
+		padding:0px;
+		padding-top:50px;
+		margin:0px;
+	}
 }
