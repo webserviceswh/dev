@@ -365,6 +365,19 @@ nav li:hover {
 .navbar{
 	min-height:5px;
 }
+.mas{
+	display:none; /*massages not to be displayed initially
+	on button click and jquery method toggle will appear after button push*/
+}
+.butDiv{
+	 display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mButton{
+	padding:5px;
+	margin:5px;
+}
 /*media screens*/
 
 @media screen and (max-width:1530px) {

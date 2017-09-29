@@ -90,7 +90,10 @@
 					<h3>Ayurvedische Massagen</h3>
 					<p>Die heilsame Wirkung der Massagen entsteht durch das Zusammenspiel von Massagetechnik und den energetischen und medizinischen Eigenschaften der Öle. Die Öle werden auf die Konstitution, den aktuellen Zustand des Kunden und die erwünschte Wirkung abgestimmt. Dabei werden durch die Öffnung der grob- und feinstofflichen Kanäle Schlackenstoffe abtransportiert und der Organismus entgiftet.
 					</p>
-					<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="col-xs-12 col-sm-12 col-md-12 butDiv">
+						<a type="button" class="btn btn-primary btn-lg linkButton" id="mButton">Massagen</a>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 mas">
 						<ul class="left-icon">
 							<li>
 								<h4>Abhyanga: 60 min</h4>
@@ -118,7 +121,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 mas">
 						<ul class="">
 							<li>
 								<h4>Mukabhyanga: 50 min</h4>
@@ -186,7 +189,7 @@
 					Kurszeiten: Montag 19.00 - 20.30 Uhr
 				</p>
 				<div class="col-xs-12 col-sm-12 col-md-12">
-					<ul class="kurszeiten" >
+					<ul class="kurszeiten">
 						<li>
 							<p><small> 2.10 </small></p>
 						</li>
@@ -257,6 +260,11 @@
 		$(".nav a").on("click", function() {
 			$(".nav").find(".active").removeClass("active");
 			$(this).parent().addClass("active");
+		});
+		$('#mButton').click(function() {
+			$('.mas').toggle('slow', function() { 
+				// Animation complete. 
+			});
 		});
 
 	</script>
