@@ -4,16 +4,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-@font-face{
-	font-family:prelude-l;
-	src:url(Fonts/PreludeFLF-Italic.ttf);
-	font-weight:bold;
+@font-face {
+	font-family: prelude-l;
+	src: url(Fonts/PreludeFLF-Italic.ttf);
+	font-weight: bold;
 }
-@font-face{
-	font-family:prelude;
-	src:url(Fonts/PreludeFLF-Bolditalic.ttf);
-	font-weight:bold;
+
+@font-face {
+	font-family: prelude;
+	src: url(Fonts/PreludeFLF-Bolditalic.ttf);
+	font-weight: bold;
 }
+
 /*colors to use
 rgb(190,153,167) #BE99A7 almost grey
 rgb(157,101,122) #9D657A	purple-grey
@@ -25,331 +27,459 @@ rgb(255,255,255) #FFFFFF	white
 #CA853B light-gold
 */
 
-html body{
-  height: 100%;
+html body {
+	height: 100%;
 }
-body{
-	font-family:'Montserrat', sans-serif;
-    font-size: 230%;
-	font-weight:300;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 230%;
+	font-weight: 300;
 	letter-spacing: 0.1em;
-	color:white;
-    margin: 0px;
-    padding: 0px;
+	color: white;
+	margin: 0px;
+	padding: 0px;
 	/*background: #5D0023; /* For browsers that do not support gradients */
-   /* background: -webkit-linear-gradient(#5D0023, #5A0022); /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
-	background: rgba(157,101,122,0.1); 
+	/* background: -webkit-linear-gradient(#5D0023, #5A0022); /* For Safari 5.1 to 6.0 */
+	/*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
+	/*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
+	/*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
+	background: rgba(157, 101, 122, 0.1);
 }
-.landing{
+
+.landing {
+	margin: 0px;
+	padding: 0px;
 	background: #fff;
 	background: url(Fotos/Frontpage2.jpg)center center no-repeat;
-	background-size:cover;
 }
-h1{
-	font-family:'prelude-l', 'Montserrat', sans-serif;
-	color:white;
+
+h1 {
+	font-family: 'prelude-l', 'Montserrat', sans-serif;
+	color: white;
 	font-size: 230%;
-	font-weight:700;
-	text-align:center;
-	padding-left:10px;
+	font-weight: 700;
+	text-align: center;
+	padding-left: 10px;
 	letter-spacing: 0.1em;
 }
-#home h1{
+
+#home h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-weight:200;
+	font-weight: 200;
 	font-size: 150%;
 }
-h2{
-	font-family: 'prelude-l','Montserrat', sans-serif;
-	color:white;
+
+h2 {
+	font-family: 'prelude-l', 'Montserrat', sans-serif;
+	color: white;
 	font-size: 380%;
-	font-weight:700;
-	text-align:center;
-	padding-left:10px;
-	margin-top:25%;
-	margin-bottom:5%;
+	font-weight: 700;
+	text-align: center;
+	padding-left: 10px;
+	margin-top: 25%;
+	margin-bottom: 5%;
 	letter-spacing: 0.1em;
 }
-h3,h4{
-	font-family: 'prelude-l','Montserrat', sans-serif;
-	font-weight:400;
-	text-align:center;
-	padding-left:10px;
-	margin-top:15px;
-	margin-bottom:10px;
+
+h3,
+h4 {
+	font-family: 'prelude-l', 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 	letter-spacing: 0.1em;
 	font-size: 1.2em;
 }
-h4{
-	font-family:'Montserrat', sans-serif;
-	font-size: 0.7em;
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
 	text-align: left;
 }
-.text-center{
+
+.text-center {
 	font-size: 170%;
 	letter-spacing: 0.1em;
 }
-#mandala{
-	position:absolute;
-	right:0px;
-	bottom:0px;
+
+#mandala {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.three {
+	margin: 0px;
+	padding: 0px;
 }
 
 /*.border{
 	padding:2px;
 	box-shadow:0px 0px 0px 1px black inset;
 }*/
+
 /* Link */
-.navbar{
-	background-color: rgba(90,0,34, 0.6);
+
+.navbar {
+	background-color: rgba(90, 0, 34, 0.6);
 }
+
 .navbar-default {
-    border:none;
+	border: none;
 }
+
 .navbar-default .navbar-nav > li > a {
-	font-family:'Montserrat', sans-serif;
-	font-weight:300;
-	color:white;
-}
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-.navbar .navbar-collapse {
-    text-align: center;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 	color: white;
-    background: none;
-	border-bottom:2px solid white;
 }
-.nav.navbar-nav li a {
-	letter-spacing: 0.2em;
-	opacity:1;
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
 }
-nav a:hover{
-	font-weight: 400;
-	color:white;
-	border-bottom: 2px solid white;
-	border-bottom-color:white;cursor:pointer;
-}
-nav li:hover{
-	font-weight: 400;
-	color:white;
-}
-.navbar-brand{
-	margin:0;
-	margin-top:5px;
-	padding:0;
-}
-.background{
-	background:white;
-}
-/*Main Landing Page*/
-.main-left {
-	height:970px;
-}
-.main-right{
-	height:970px;
-}
-.overlay{
-	background:rgb(157,101,122);
-	opacity:0.8;
-	height:auto;
-	width:800px;
-    margin: auto;
-	font-size: 1.2em;
-	text-align:center;
-}
-.overlay h3{
-	font-size: 1.8em;
-}
-/*Ayurveda*/
-.main-left.ayu{
-	z-index:1;
-}
-.main-right.ayu{
-	background:url('Fotos/Ayurveda.jpg') no-repeat center center;
-	display: -webkit-box;
-    display: -ms-flexbox;
-	display: flex;
-    align-items: center; 
-	z-index:2;
-}
-#ayuDescr{
-	transform: translate(-70%);
-	overflow:visible; !important
-}
-.linkButton{
-	background-color: rgba(90,0,34, 0.6);
-	border:none;
-}
-/*navigate to massagen and ernährungsberatung*/
-.anchor{
-	height:70px;
-}
-.wrapper{
-	height:auto;
-	margin: 0em;
-	padding: 0em;
-	background-color:rgba(98,154,133,0.4);
-}
-#massagen{
-	background-color:rgba(157,101,122,0.9);
-}
-#massagen h3,#ernaehrung h3{
-	font-size:1.8em;
-}
-#ernaehrung{
+
+.navbar .navbar-collapse {
 	text-align: center;
 }
 
-/*Yoga*/
-.main-right.yoga{
-	z-index:1;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: white;
+	background: none;
+	border-bottom: 2px solid white;
 }
-.main-left.yoga{
-	background:url('Fotos/yoga.JPG') no-repeat center center;
+
+.nav.navbar-nav li a {
+	letter-spacing: 0.2em;
+	opacity: 1;
+}
+
+nav a:hover {
+	font-weight: 400;
+	color: white;
+	border-bottom: 2px solid white;
+	border-bottom-color: white;
+	cursor: pointer;
+}
+
+nav li:hover {
+	font-weight: 400;
+	color: white;
+}
+
+.container-fluid {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar-brand {
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+}
+
+.dropdown-menu {
+	background-color: rgba(90, 0, 34, 0.6);
+}
+
+.dropdown-menu li a {
+	color: white;
+}
+
+.navbar-default .navbar-nav .dropdown.open a:focus {
+	background-color: rgba(90, 0, 34, 1);
+}
+
+.background {
+	background: white;
+}
+
+/*Main Landing Page*/
+
+.main-left {
+	height: 970px;
+}
+
+.main-right {
+	height: 970px;
+}
+
+.overlay {
+	background: rgb(157, 101, 122);
+	opacity: 0.8;
+	height: auto;
+	width: 800px;
+	margin: auto;
+	font-size: 1.0em;
+}
+
+.overlay h3 {
+	font-size: 1.8em;
+}
+
+/*Ayurveda Yoga*/
+
+.main-left.ayu {
+	z-index: 1;
+	height: auto;
+}
+
+.main-right.ayu,
+.main-left.yoga {
+	background-position: 0 75px;
+	margin: 0px;
+	padding: 0px;
 	display: -webkit-box;
-    display: -ms-flexbox;
+	display: -ms-flexbox;
 	display: flex;
-    align-items: center; 
-	z-index:2;
+	align-items: center;
+	z-index: 2;
+	height: 800px;
 }
-#yogaDescr{
+
+.main-right.ayu {
+	background: url('Fotos/Ayurveda.jpg') no-repeat center center;
+}
+
+.main-left.yoga {
+	background: url('Fotos/yoga.JPG') no-repeat center center;
+}
+
+#ayuDescr {
+	transform: translate(-70%);
+	overflow: visible;
+	!important
+}
+
+.linkButton {
+	background-color: rgba(90, 0, 34, 0.6);
+	border: none;
+}
+
+/*massagen und ernährung*/
+
+#massagen,
+#kurse {
+	margin: auto;
+	padding-top: 50px;
+	margin-top: 0px;
+	background-color: rgba(157, 101, 122, 0.9);
+}
+
+#massagen h3,
+#ernaehrung h3,
+#kurse h3 {
+	font-size: 1.8em;
+}
+
+#massagen p,
+#kurse p {
+	font-size: 0.8em;
+
+}
+
+#ernaehrung {
+	height: auto;
+	padding-top: 75px;
+	background: url('Fotos/Ernaehrung.jpg')no-repeat;
+	background-position: 0 75px;
+}
+
+#txt_ernaehrung {
+	float: right;
+	height: auto;
+	width: 800px;
+	text-align: left;
+}
+
+/*Yoga*/
+
+.main-right.yoga {
+	z-index: 1;
+	height: auto;
+}
+
+.main-left.yoga {
+	margin-bottom: 75px;
+	padding-top: 75px;
+	background: url('Fotos/yoga.JPG') no-repeat center center;
+	background-position: 0 75px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	height: 800px;
+}
+
+#yogaDescr {
 	transform: translate(+70%);
-	overflow:visible; !important
+	overflow: visible;
+	!important
 }
- .landing{
-		margin:0px;
-	 }
-	.two{
-		margin:0px;
-		padding-left:2em;
-		padding-right:2em;
-	 }
-	.one{
-		margin:0px;
-		padding-left:2em;
-		padding-right:2em;
-	}
+
+.center {
+	text-align: center;
+}
+#kurse{
+	margin-bottom:50px;
+}
+.kurszeiten {
+	text-align: center;
+}
+
+.kurszeiten li {
+	display: inline-block;
+	margin: 5px;
+	margin-left: 0px;
+	padding: 0px;
+	padding-right: 25px;
+}
+
+.two {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.footer{
+	height:auto;
+	background-color: white;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+    vertical-align:middle;
+}
+.footer p{
+	height:auto;
+	margin:2px;
+	padding:2px;
+	color:black;
+	font-size: 0.6em;
+}
+.navbar{
+	min-height:5px;
+}
 /*media screens*/
- @media screen and (max-width:1530px){
-	 #yogaDescr{
+
+@media screen and (max-width:1530px) {
+	#yogaDescr {
 		transform: translate(+50%);
-	 }
-	 #ayuDescr{
-		transform: translate(-50%);
-	 }
-	 #massagen{
-		word-wrap: break-word;
 	}
-}
- @media screen and (max-width:1300px){
-	.two{
-		padding-left:1em;
-		padding-right:1em;
-	 }
-	.one{
-		padding-left:1em;
-		padding-right:1em;
+	#ayuDescr {
+		transform: translate(-50%);
+	}
+	#massagen {
+		word-wrap: break-word;
 	}
 }
 
-@media screen and (max-width:1199px){
-	 #yogaDescr{
+@media screen and (max-width:1300px) {
+	.two,
+	.one {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	#yogaDescr {
 		transform: translate(+30%);
-	 }
-	 #ayuDescr{
+	}
+	#ayuDescr {
 		transform: translate(-30%);
-	 }
-	.ayu,.yoga{
-		height:800px;
-		padding-top:50px;
-		margin-top:50px;
-		margin-bottom:50px;
+	}
+	.ayu,
+	.yoga {
+		height: 800px;
+		padding-top: 50px;
+		margin-top: 50px;
 	}
 }
-@media screen and (max-width:991px){
-	.main-right.yoga{
-		display:none;
+
+@media screen and (max-width:991px) {
+	.main-right.yoga {
+		display: none;
 	}
-	.main-left.ayu{
-		display:none;
+	.main-left.ayu {
+		display: none;
 	}
-	 #yogaDescr,#ayuDescr{
+	#yogaDescr,
+	#ayuDescr {
 		transform: translate(0%);
-	 }
-	#manda{
-		height:70%;
 	}
-	.wrapper{
-		background-color:white;
+	#manda {
+		height: 70%;
 	}
-	#ernaehrung{
-		padding:0px;
-		padding-top:60px;
-		padding-bottom:60px;
-		background-clip:content-box;
-		background-color:rgba(98,154,133,0.6);
-		text-align: center;
-	}
-	#yoga{
-		padding-top:60px;
-		margin-top:0px;
+	#yoga {
+		padding-top: 60px;
+		margin-top: 0px;
 		font-size: 0.8em;
 	}
-	#ayu{
-		padding-top:60px;
-		margin-top:0px;
+	#ayu {
+		padding-top: 60px;
+		margin-top: 0px;
 		font-size: 0.8em;
 		word-wrap: break-word;
 	}
 }
-@media screen and (max-width:750px){
-	.navbar{
-		background-color: rgba(90,0,34,0.9);
-	}
-}
-@media screen and (max-width:575px){
-	.main-left.yoga{
-		padding-top:50px;
-		background:none;
+
+@media screen and (max-width:906px) {
+	#txt_ernaehrung {
+		height: auto;
+		width: 100%;
 		word-wrap: break-word;
 	}
-	.main-right.ayu{
-		padding-top:50px;
-		background:none;
+}
+
+
+@media screen and (max-width:750px) {
+	.navbar {
+		background-color: rgba(90, 0, 34, 0.9);
+	}
+}
+
+@media screen and (max-width:575px) {
+	.main-left.yoga {
+		padding-top: 50px;
+		background: none;
+		word-wrap: break-word;
+	}
+	.main-right.ayu {
+		padding-top: 50px;
+		background: none;
 		word-wrap: break-word;
 	}
 	.main-left {
-		padding:0px;
-		height:auto;
+		padding: 0px;
+		height: auto;
 	}
-	.main-right{
-		padding:0px;
-		height:auto;
+	.main-right {
+		padding: 0px;
+		height: auto;
 	}
-	.two{
-		padding:0px;
+	.two {
+		padding: 0px;
 	}
-	.anchor{
-		height:50px;
+	#manda {
+		display: none;
 	}
-	#manda{
-		display:none;
-	}
-	#massage,#ernaehrung{
-		padding-top:50px;
-		padding-bottom:0px;
+	#massage,
+	#ernaehrung {
+		padding-top: 50px;
+		padding-bottom: 0px;
 		word-wrap: break-word;
 	}
-	#ayu,#yoga{
-		padding:0px;
-		padding-top:50px;
-		margin:0px;
+	#ayu,
+	#yoga {
+		padding: 0px;
+		padding-top: 50px;
+		margin: 0px;
+		word-wrap: break-word;
 	}
 }
