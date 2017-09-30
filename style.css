@@ -287,7 +287,7 @@ nav li:hover {
 	height: auto;
 	padding-top: 75px;
 	background: url('Fotos/Ernaehrung.jpg')no-repeat;
-	background-position: 0 75px;
+	background-position: 0 60px;
 }
 
 #txt_ernaehrung {
@@ -305,8 +305,8 @@ nav li:hover {
 }
 
 .main-left.yoga {
-	margin-bottom: 75px;
-	padding-top: 75px;
+	margin-bottom: 60px;
+	padding-top: 60px;
 	background: url('Fotos/yoga.JPG') no-repeat center center;
 	background-position: 0 75px;
 	display: -webkit-box;
@@ -326,9 +326,11 @@ nav li:hover {
 .center {
 	text-align: center;
 }
-#kurse{
-	margin-bottom:50px;
+
+#kurse {
+	margin-bottom: 50px;
 }
+
 .kurszeiten {
 	text-align: center;
 }
@@ -344,40 +346,49 @@ nav li:hover {
 .two {
 	margin: 0px;
 	padding: 0px;
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 6em;
+	margin-right: 6em;
+	background: white;
 }
-.footer{
-	height:auto;
+
+.footer {
+	height: auto;
 	background-color: white;
-	margin:0px;
-	padding:0px;
-	text-align:center;
-    vertical-align:middle;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
 }
-.footer p{
-	height:auto;
-	margin:2px;
-	padding:2px;
-	color:black;
+
+.footer p {
+	height: auto;
+	margin: 2px;
+	padding: 2px;
+	color: black;
 	font-size: 0.6em;
 }
-.navbar{
-	min-height:5px;
+
+.navbar {
+	min-height: 5px;
 }
-.mas{
-	display:none; /*massages not to be displayed initially
+
+.mas {
+	display: none;
+	/*massages not to be displayed initially
 	on button click and jquery method toggle will appear after button push*/
 }
-.butDiv{
-	 display: flex;
-  align-items: center;
-  justify-content: center;
+
+.butDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#mButton{
-	padding:5px;
-	margin:5px;
+
+#mButton {
+	padding: 5px;
+	margin: 5px;
 }
+
 /*media screens*/
 
 @media screen and (max-width:1530px) {
@@ -397,6 +408,9 @@ nav li:hover {
 	.one {
 		margin-left: 1em;
 		margin-right: 1em;
+	}
+	body{
+		background:white;
 	}
 }
 
@@ -437,7 +451,6 @@ nav li:hover {
 	#ayu {
 		padding-top: 60px;
 		margin-top: 0px;
-		font-size: 0.8em;
 		word-wrap: break-word;
 	}
 }
