@@ -100,9 +100,12 @@ h4 {
 	text-align: left;
 }
 
-.text-center {
-	font-size: 170%;
+h5 {
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.1em;
+	font-size: 1.2em;
+	text-align: center;
+	color: rgba(157, 101, 122, 0.9);
 }
 
 #mandala {
@@ -125,6 +128,8 @@ h4 {
 
 .navbar {
 	background-color: rgba(90, 0, 34, 0.6);
+	margin-left: 6em;
+	margin-right: 6em;
 }
 
 .navbar-default {
@@ -157,6 +162,7 @@ h4 {
 .nav.navbar-nav li a {
 	letter-spacing: 0.2em;
 	opacity: 1;
+	font-size: 90%;
 }
 
 nav a:hover {
@@ -167,8 +173,8 @@ nav a:hover {
 	cursor: pointer;
 }
 
-nav li:hover {
-	font-weight: 400;
+.nav.navbar-nav li a:hover {
+	font-weight: 500;
 	color: white;
 }
 
@@ -215,7 +221,6 @@ nav li:hover {
 	height: auto;
 	width: 800px;
 	margin: auto;
-	font-size: 1.0em;
 }
 
 .overlay h3 {
@@ -242,16 +247,8 @@ nav li:hover {
 	height: 800px;
 }
 
-.main-right.ayu {
-	background: url('Fotos/Ayurveda.jpg') no-repeat center center;
-}
-
-.main-left.yoga {
-	background: url('Fotos/yoga.JPG') no-repeat center center;
-}
-
-#ayuDescr {
-	transform: translate(-70%);
+#descr {
+	transform: translate(-60%);
 	overflow: visible;
 	!important
 }
@@ -264,30 +261,34 @@ nav li:hover {
 /*massagen und ernährung*/
 
 #massagen,
-#kurse {
-	margin: auto;
-	padding-top: 50px;
-	margin-top: 0px;
-	background-color: rgba(157, 101, 122, 0.9);
+#AboutMe {
+	background-image: linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -webkit-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -moz-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -ms-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
 }
+#massagen h3,
+#AboutMe h3{
+	margin-top:70px;
+}
+
+
 
 #massagen h3,
 #ernaehrung h3,
-#kurse h3 {
+#AboutMe h3 {
 	font-size: 1.8em;
 }
 
 #massagen p,
-#kurse p {
+#AboutMe p {
 	font-size: 0.8em;
-
 }
 
 #ernaehrung {
-	height: auto;
-	padding-top: 75px;
-	background: url('Fotos/Ernaehrung.jpg')no-repeat;
+	background: url('Fotos/Ernaehrung.jpg')no-repeat center center;
 	background-position: 0 60px;
+
 }
 
 #txt_ernaehrung {
@@ -299,40 +300,50 @@ nav li:hover {
 
 /*Yoga*/
 
-.main-right.yoga {
-	z-index: 1;
-	height: auto;
-}
-
-.main-left.yoga {
-	margin-bottom: 60px;
-	padding-top: 60px;
+#yoga {
 	background: url('Fotos/yoga.JPG') no-repeat center center;
-	background-position: 0 75px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	align-items: center;
-	z-index: 2;
-	height: 800px;
+	background-position: left 3em top 60px;
 }
 
-#yogaDescr {
-	transform: translate(+70%);
-	overflow: visible;
-	!important
+#ayu {
+	background: url('Fotos/Ayurveda.jpg') no-repeat center center;
+	background-position: right 0em top 60px;
+	height: 700px;
+	/*Foto is smaller than yoga pic*/
 }
 
 .center {
 	text-align: center;
 }
 
-#kurse {
+.left {
+	text-align: left;
+	margin-left: 50px;
+}
+
+.full {
+	margin-top: 80px;
+	width: 100%;
+}
+
+#AboutMe {
 	margin-bottom: 50px;
+}
+
+.zeiten {
+	vertical-align: middle;
+	min-height: inherit;
+	padding-top: 10%;
+	font-size: 80%;
+}
+
+.uhrzeit {
+	color: black;
 }
 
 .kurszeiten {
 	text-align: center;
+	border: 1px solid rgba(157, 101, 122, 0.9);
 }
 
 .kurszeiten li {
@@ -341,6 +352,7 @@ nav li:hover {
 	margin-left: 0px;
 	padding: 0px;
 	padding-right: 25px;
+	color: black;
 }
 
 .two {
@@ -358,6 +370,8 @@ nav li:hover {
 	padding: 0px;
 	text-align: center;
 	vertical-align: middle;
+	margin-left: 6em;
+	margin-right: 6em;
 }
 
 .footer p {
@@ -374,8 +388,8 @@ nav li:hover {
 
 .mas {
 	display: none;
-	/*massages not to be displayed initially
-	on button click and jquery method toggle will appear after button push*/
+	/*massages are not displayed initially
+	they will appear on button click*/
 }
 
 .butDiv {
@@ -388,57 +402,78 @@ nav li:hover {
 	padding: 5px;
 	margin: 5px;
 }
-
+.link{
+	color:rgba(157, 101, 122, 0.9);
+}
 /*media screens*/
 
-@media screen and (max-width:1530px) {
-	#yogaDescr {
-		transform: translate(+50%);
-	}
-	#ayuDescr {
+@media screen and (max-width:1830px) {
+	#descr {
 		transform: translate(-50%);
 	}
+}
+
+@media screen and (max-width:1670px) {
+
+	#descr {
+		transform: translate(-40%);
+	}
+}
+
+@media screen and (max-width:1588px) {
+	#descr {
+		transform: translate(-30%);
+	}
+}
+
+@media screen and (min-width:1530px) {
+	.outer,
+	.three {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	#kurse,
 	#massagen {
-		word-wrap: break-word;
+		padding: 1em;
+	}
+	#yoga {
+		padding-right: 3em;
+		background-position: left 3em top 60px;
+	}
+	#ayu {
+		padding-right: 3em;
+		background-position: right 0em top 60px;
 	}
 }
 
 @media screen and (max-width:1300px) {
-	.two,
+	.navbar,.two,
 	.one {
 		margin-left: 1em;
 		margin-right: 1em;
 	}
-	body{
-		background:white;
+	body {
+		background: white;
+		font-size: 190%;
 	}
-}
-
-@media screen and (max-width:1199px) {
-	#yogaDescr {
-		transform: translate(+30%);
-	}
-	#ayuDescr {
-		transform: translate(-30%);
-	}
-	.ayu,
-	.yoga {
-		height: 800px;
+	.zeiten {
 		padding-top: 50px;
-		margin-top: 50px;
 	}
+
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:992px) {
 	.main-right.yoga {
 		display: none;
 	}
 	.main-left.ayu {
 		display: none;
 	}
-	#yogaDescr,
-	#ayuDescr {
+	#descr {
 		transform: translate(0%);
+	}
+	#yoga {
+		background-position: left 0em top 60px;
 	}
 	#manda {
 		height: 70%;
@@ -446,20 +481,39 @@ nav li:hover {
 	#yoga {
 		padding-top: 60px;
 		margin-top: 0px;
-		font-size: 0.8em;
 	}
 	#ayu {
 		padding-top: 60px;
 		margin-top: 0px;
 		word-wrap: break-word;
 	}
+	#txt_ernaehrung {
+		float: left;
+		height: auto;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:906px) {
 	#txt_ernaehrung {
-		height: auto;
 		width: 100%;
 		word-wrap: break-word;
+	}
+	#ayu,#yoga{
+		background:none;
+		height:auto;
+	}
+	#descr{
+		width:100%;
+	}
+	.navbar,.two,
+	.one{
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+	.outer{
+		padding-left:0px;
+		padding-right:0px;
 	}
 }
 
@@ -467,6 +521,9 @@ nav li:hover {
 @media screen and (max-width:750px) {
 	.navbar {
 		background-color: rgba(90, 0, 34, 0.9);
+	}
+	.footer {
+		background-color: white;
 	}
 }
 
@@ -507,5 +564,8 @@ nav li:hover {
 		padding-top: 50px;
 		margin: 0px;
 		word-wrap: break-word;
+	}
+	#ernaehrung{
+		background-repeat: repeat;
 	}
 }
