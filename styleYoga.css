@@ -1,3 +1,19 @@
     body {
-        background: white;
+        background: rgba(157,101,122, 1);
     }
+    .boxCal{
+        margin-right: auto; margin-left: auto;
+    }
+    .blue{
+        background:rgba(0,0,255,0.5);
+    }
+    .red{
+        background: rgba(255,0,0,0.5);
+    }
+    .green{
+       background:  rgba(0,128,0,0.7);
+    }
+    .yellow{
+        background:rgba(255,255,0,0.7);
+    }
+  
