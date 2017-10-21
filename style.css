@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400');
+
 /*@font-face {
 	font-family: prelude-l;
 	src: url(Fonts/PreludeFLF-Italic.ttf);
@@ -11,17 +12,19 @@
 	src: url(Fonts/PreludeFLF-Bolditalic.ttf);
 	font-weight: bold;
 }*/
+
 @font-face {
-	font-family: prelude-l;
-	src: url(Fonts/PreludeFLF-Italic.ttf);
-	font-weight: bold;
+    font-family: prelude-l;
+    src: url(Fonts/PreludeFLF-Italic.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-	font-family: prelude;
-	src: url(Fonts/PreludeFLF-Bolditalic.ttf);
-	font-weight: bold;
+    font-family: prelude;
+    src: url(Fonts/PreludeFLF-Bolditalic.ttf);
+    font-weight: bold;
 }
+
 
 /*colors to use
 rgb(190,153,167) #BE99A7 almost grey
@@ -35,535 +38,560 @@ rgb(255,255,255) #FFFFFF	white
 */
 
 html body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	font-family: 'Fira Sans','Montserrat', sans-serif;
-	font-size: 230%;
-	font-weight: 300;
-	letter-spacing: 0.05em;
-	color: white;
-	margin: 0px;
-	padding: 0px;
-	/*background: #5D0023; /* For browsers that do not support gradients */
-	/* background: -webkit-linear-gradient(#5D0023, #5A0022); /* For Safari 5.1 to 6.0 */
-	/*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
-	/*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
-	/*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
-	background: rgba(157, 101, 122, 0.1);
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-size: 230%;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    /*background: #5D0023; /* For browsers that do not support gradients */
+    /* background: -webkit-linear-gradient(#5D0023, #5A0022); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#5D0023, #5A0022); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#5D0023, #5A0022); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#5D0023, #5A0022); /* Standard syntax */
+    background: rgba(157, 101, 122, 0.1);
 }
 
 .landing {
-	margin: 0px;
-	padding: 0px;
-	background: #fff;
-	background: url(Fotos/Frontpage2.jpg)center center no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    background: url(Fotos/Frontpage2.jpg)center center no-repeat;
 }
 
 h1 {
-	font-family: 'prelude-l', 'Montserrat', sans-serif;
-	color: white;
-	font-size: 230%;
-	font-weight: 700;
-	text-align: center;
-	padding-left: 10px;
-	letter-spacing: 0.1em;
+    font-family: 'prelude-l', 'Montserrat', sans-serif;
+    color: white;
+    font-size: 230%;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 10px;
+    letter-spacing: 0.1em;
 }
 
 #home h1 {
-	font-family:'Fira Sans', 'Montserrat', sans-serif;
-	font-weight: 200;
-	font-size: 150%;
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 150%;
 }
 
 h2 {
-	font-family: 'prelude-l', 'Montserrat', sans-serif;
-	color: white;
-	font-size: 380%;
-	font-weight: 700;
-	text-align: center;
-	padding-left: 10px;
-	margin-top: 25%;
-	margin-bottom: 5%;
-	letter-spacing: 0.1em;
+    font-family: 'prelude-l', 'Montserrat', sans-serif;
+    color: white;
+    font-size: 380%;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 25%;
+    margin-bottom: 5%;
+    letter-spacing: 0.1em;
 }
 
 h3,
 h4 {
-	font-family: 'prelude-l', 'Montserrat', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	padding-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	letter-spacing: 0.1em;
-	font-size: 1.2em;
+    font-family: 'prelude-l', 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
 }
 
 h4 {
-	font-family: 'Fira Sans','Montserrat', sans-serif;
-	font-size: 0.8em;
-	text-align: left;
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    text-align: left;
 }
 
 h5 {
-	font-family: 'Fira Sans','Montserrat', sans-serif;
-	letter-spacing: 0.1em;
-	font-size: 1.2em;
-	text-align: center;
-	color: rgba(157, 101, 122, 0.9);
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgba(157, 101, 122, 0.9);
 }
 
 #mandala {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 .three {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 /*.border{
 	padding:2px;
 	box-shadow:0px 0px 0px 1px black inset;
 }*/
 
+
 /* Link */
 
 .navbar {
-	background-color: rgba(90, 0, 34, 0.6);
-	margin-left: 6em;
-	margin-right: 6em;
+    background-color: rgba(90, 0, 34, 0.6);
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 .navbar-default {
-	border: none;
+    border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
-	font-family: 'Fira Sans','Montserrat', sans-serif;
-	font-weight: 300;
-	color: white;
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
 }
 
 .navbar .navbar-nav {
-	display: inline-block;
-	float: none;
+    display: inline-block;
+    float: none;
 }
 
 .navbar .navbar-collapse {
-	text-align: center;
+    text-align: center;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-	color: white;
-	background: none;
-	border-bottom: 2px solid white;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: none;
+    border-bottom: 2px solid white;
 }
 
 .nav.navbar-nav li a {
-	letter-spacing: 0.2em;
-	opacity: 1;
-	font-size: 90%;
+    letter-spacing: 0.2em;
+    opacity: 1;
+    font-size: 90%;
 }
 
 nav a:hover {
-	font-weight: 400;
-	color: white;
-	border-bottom: 2px solid white;
-	border-bottom-color: white;
-	cursor: pointer;
+    font-weight: 400;
+    color: white;
+    border-bottom: 2px solid white;
+    border-bottom-color: white;
+    cursor: pointer;
 }
 
 .nav.navbar-nav li a:hover {
-	font-weight: 500;
-	color: white;
+    font-weight: 500;
+    color: white;
 }
 
 .container-fluid {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .navbar-brand {
-	margin: 0;
-	margin-top: 5px;
-	padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
 }
 
 .dropdown-menu {
-	background-color: rgba(90, 0, 34, 0.6);
+    background-color: rgba(90, 0, 34, 0.6);
 }
 
 .dropdown-menu li a {
-	color: white;
+    color: white;
 }
 
 .navbar-default .navbar-nav .dropdown.open a:focus {
-	background-color: rgba(90, 0, 34, 1);
+    background-color: rgba(90, 0, 34, 1);
 }
 
 .background {
-	background: white;
+    background: white;
 }
+
 
 /*Main Landing Page*/
 
 .main-left {
-	height: 800px;
+    height: 800px;
 }
 
 .main-right {
-	height: 800px;
+    height: 800px;
 }
 
 .overlay {
-	background: rgb(157, 101, 122);
-	opacity: 0.8;
-	height: auto;
-	width: 800px;
-	margin: auto;
+    background: rgb(157, 101, 122);
+    opacity: 0.8;
+    height: auto;
+    width: 800px;
+    margin: auto;
 }
 
 .overlay h3 {
-	font-size: 1.8em;
+    font-size: 1.8em;
 }
+
 
 /*Ayurveda Yoga*/
 
 .main-left.ayu {
-	z-index: 1;
-	height: auto;
+    z-index: 1;
+    height: auto;
 }
 
 .main-right.ayu,
-.main-left.yoga,.main-left.ernaehrung {
-	background-position: 0 75px;
-	margin: 0px;
-	padding: 0px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	align-items: center;
-	z-index: 2;
-	height: 800px;
+.main-left.yoga,
+.main-left.ernaehrung {
+    background-position: 0 75px;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    height: 800px;
 }
 
 #descr {
-	transform: translate(-60%);
-	overflow: visible;
-	!important
+    transform: translate(-60%);
+    overflow: visible;
+    !important
 }
+
 #descrEr {
-	transform: translate(+60%);
-	overflow: visible;
-	!important
+    transform: translate(+60%);
+    overflow: visible;
+    !important
 }
 
 .linkButton {
-	background-color: rgba(90, 0, 34, 0.6);
-	border: none;
+    background-color: rgba(90, 0, 34, 0.6);
+    border: none;
 }
+
 
 /*massagen und ernährung*/
 
 #massagen,
 #AboutMe {
-	background-image: linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -webkit-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -moz-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -ms-linear-gradient(top, transparent 60px,rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-	text-align:center;
+    background-image: linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -webkit-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -moz-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: -ms-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    text-align: center;
 }
+
 #massagen h3,
-#AboutMe h3{
-	margin-top:70px;
+#AboutMe h3 {
+    margin-top: 70px;
 }
+
 #massagen h3,
 #ernaehrung h3,
 #AboutMe h3 {
-	font-size: 1.8em;
+    font-size: 1.8em;
 }
+
 #massagen p,
 #AboutMe p {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
+
 #txt_ernaehrung {
-	float: right;
-	height: auto;
-	width: 800px;
-	text-align: left;
+    float: right;
+    height: auto;
+    width: 800px;
+    text-align: left;
 }
+
 
 /*Yoga*/
 
 #yoga {
-	background: url('Fotos/yoga.JPG') no-repeat center center;
-	background-position: right 0em top 60px;
+    background: url('Fotos/yoga.JPG') no-repeat center center;
+    background-position: right 0em top 60px;
 }
 
 #ayu {
-	background: url('Fotos/Ayurveda.jpg') no-repeat center center;
-	background-position: right 0em top 60px;
-	height: 700px;
-	/*Foto is smaller than yoga pic*/
+    background: url('Fotos/Ayurveda.jpg') no-repeat center center;
+    background-position: right 0em top 60px;
+    height: 700px;
+    /*Foto is smaller than yoga pic*/
 }
-#ernaehrung {
-	background: url('Fotos/Ernaehrung.jpg')no-repeat center center;
-	background-position: right 0em top 60px;
 
+#ernaehrung {
+    background: url('Fotos/Ernaehrung.jpg')no-repeat center center;
+    background-position: right 0em top 60px;
 }
 
 .center {
-	text-align: center;
+    text-align: center;
 }
 
 .left {
-	text-align: left;
-	margin-left: 50px;
+    text-align: left;
+    margin-left: 50px;
 }
 
 .full {
-	margin-top: 80px;
-	width: 100%;
+    margin-top: 80px;
+    width: 100%;
 }
 
 #AboutMe {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .zeiten {
-	vertical-align: middle;
-	min-height: inherit;
-	padding-top: 10%;
-	font-size: 80%;
+    vertical-align: middle;
+    min-height: inherit;
+    padding-top: 10%;
+    font-size: 80%;
 }
 
 .uhrzeit {
-	color: black;
+    color: black;
 }
 
 .kurszeiten {
-	text-align: center;
-	border: 1px solid rgba(157, 101, 122, 0.9);
+    text-align: center;
+    border: 1px solid rgba(157, 101, 122, 0.9);
 }
 
 .kurszeiten li {
-	display: inline-block;
-	margin: 5px;
-	margin-left: 0px;
-	padding: 0px;
-	padding-right: 25px;
-	color: black;
+    display: inline-block;
+    margin: 5px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-right: 25px;
+    color: black;
 }
 
 .two {
-	margin: 0px;
-	padding: 0px;
-	margin-left: 6em;
-	margin-right: 6em;
-	background: white;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 6em;
+    margin-right: 6em;
+    background: white;
 }
 
 .footer {
-	height: auto;
-	background-color: white;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	vertical-align: middle;
-	margin-left: 6em;
-	margin-right: 6em;
+    height: auto;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 .footer p {
-	height: auto;
-	margin: 2px;
-	padding: 2px;
-	color: black;
-	font-size: 0.8em;
+    height: auto;
+    margin: 2px;
+    padding: 2px;
+    color: black;
+    font-size: 0.8em;
 }
 
 .navbar {
-	min-height: 5px;
+    min-height: 5px;
 }
 
 .mas {
-	display: none;
-	/*massages are not displayed initially
+    display: none;
+    /*massages are not displayed initially
 	they will appear on button click*/
 }
 
 .butDiv {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #mButton {
-	padding: 5px;
-	margin: 5px;
+    padding: 5px;
+    margin: 5px;
 }
-.contact{
-	/*padding-left:25%;*/
-	font-size:0.9em;
+
+.contact {
+    /*padding-left:25%;*/
+    font-size: 0.9em;
 }
-.link{
-	color:rgba(157, 101, 122, 0.9);
+
+.link {
+    color: rgba(157, 101, 122, 0.9);
 }
-.link2{
-	color:gainsboro;
+
+.link2 {
+    color: gainsboro;
 }
+
+
 /*media screens*/
 
 @media screen and (max-width:1830px) {
-	#descr {
-		transform: translate(-50%);
-	}
-	#descrEr {
-		transform: translate(+50%);
-	}
+    #descr {
+        transform: translate(-50%);
+    }
+    #descrEr {
+        transform: translate(+50%);
+    }
 }
 
 @media screen and (max-width:1670px) {
-
-	#descr {
-		transform: translate(-40%);
-	}
-#descrEr {
-		transform: translate(+40%);
-	}
+    #descr {
+        transform: translate(-40%);
+    }
+    #descrEr {
+        transform: translate(+40%);
+    }
 }
 
 @media screen and (max-width:1588px) {
-	#descr {
-		transform: translate(-30%);
-	}
-	#descrEr {
-		transform: translate(+30%);
-	}
+    #descr {
+        transform: translate(-30%);
+    }
+    #descrEr {
+        transform: translate(+30%);
+    }
 }
 
 @media screen and (min-width:1530px) {
-	.outer,
-	.three {
-		padding-left: 3em;
-		padding-right: 3em;
-	}
-	#kurse,
-	#massagen {
-		padding: 1em;
-	}
-	#yoga, #ayu {
-		background-position: left 3em top 60px;
-	}
+    .outer,
+    .three {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    #kurse,
+    #massagen {
+        padding: 1em;
+    }
+    #yoga,
+    #ayu {
+        background-position: left 3em top 60px;
+    }
 }
 
 @media screen and (max-width:1300px) {
-	.navbar,.two,
-	.one {
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-	body {
-		background: white;
-		font-size: 190%;
-	}
-	.zeiten {
-		padding-top: 50px;
-	}
-
+    .navbar,
+    .two,
+    .one {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    body {
+        background: white;
+        font-size: 190%;
+    }
+    .zeiten {
+        padding-top: 50px;
+    }
 }
 
 @media screen and (max-width:992px) {
-	.main-right.yoga,.main-right.ernaehrung,.main-left.ayu {
-		display: none;
-	}
-	#descr,#descrEr {
-		transform: translate(0%);
-	}
-	#yoga {
-		background-position: left 0em top 60px;
-	}
-	#manda {
-		height: 70%;
-	}
-	#ayu,#yoga,#ernaehrung {
-		padding-top: 53px;
-		margin-top: 0px;
-		word-wrap: break-word;
-	}
-	#txt_ernaehrung {
-		float: left;
-		height: auto;
-		width: 100%;
-	}
+    .main-right.yoga,
+    .main-right.ernaehrung,
+    .main-left.ayu {
+        display: none;
+    }
+    #descr,
+    #descrEr {
+        transform: translate(0%);
+    }
+    #yoga {
+        background-position: left 0em top 60px;
+    }
+    #manda {
+        height: 70%;
+    }
+    #ayu,
+    #yoga,
+    #ernaehrung {
+        padding-top: 53px;
+        margin-top: 0px;
+        word-wrap: break-word;
+    }
+    #txt_ernaehrung {
+        float: left;
+        height: auto;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:906px) {
-	#txt_ernaehrung {
-		width: 100%;
-		word-wrap: break-word;
-	}
-	#ayu,#yoga,#ernaehrung{
-		background:none;
-		height:auto;
-	}
-	#descr,#descrEr{
-		width:100%;
-	}
-	.navbar,.two,
-	.one{
-		margin-left: 0em;
-		margin-right: 0em;
-	}
-	.outer{
-		padding-left:0px;
-		padding-right:0px;
-	}
+    #txt_ernaehrung {
+        width: 100%;
+        word-wrap: break-word;
+    }
+    #ayu,
+    #yoga,
+    #ernaehrung {
+        background: none;
+        height: auto;
+    }
+    #descr,
+    #descrEr {
+        width: 100%;
+    }
+    .navbar,
+    .two,
+    .one {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    .outer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
-
 @media screen and (max-width:750px) {
-	.navbar {
-		background-color: rgba(90, 0, 34, 0.9);
-	}
-	.footer {
-		background-color: white;
-	}
+    .navbar {
+        background-color: rgba(90, 0, 34, 0.9);
+    }
+    .footer {
+        background-color: white;
+    }
 }
 
 @media screen and (max-width:575px) {
-
-	.main-left {
-		padding: 0px;
-		height: auto;
-	}
-	.main-right {
-		padding: 0px;
-		height: auto;
-	}
-	.two {
-		padding: 0px;
-	}
-	#manda {
-		display: none;
-	}
-	#massage{
-		padding-top: 49px;
-		padding-bottom: 0px;
-		word-wrap: break-word;
-	}
-	#ayu,
-	#yoga,#ernaehrung{
-		padding: 0px;
-		padding-top: 49px;
-		margin: 0px;
-		word-wrap: break-word;
-	}
+    .main-left {
+        padding: 0px;
+        height: auto;
+    }
+    .main-right {
+        padding: 0px;
+        height: auto;
+    }
+    .two {
+        padding: 0px;
+    }
+    #manda {
+        display: none;
+    }
+    #massage {
+        padding-top: 49px;
+        padding-bottom: 0px;
+        word-wrap: break-word;
+    }
+    #ayu,
+    #yoga,
+    #ernaehrung {
+        padding: 0px;
+        padding-top: 49px;
+        margin: 0px;
+        word-wrap: break-word;
+    }
 }
