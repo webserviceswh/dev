@@ -1,19 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400');
+
+/*@font-face {
+	font-family: prelude-l;
+	src: url(Fonts/PreludeFLF-Italic.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: prelude;
+	src: url(Fonts/PreludeFLF-Bolditalic.ttf);
+	font-weight: bold;
+}*/
+
+@font-face {
+    font-family: prelude-l;
+    src: url(Fonts/PreludeFLF-Italic.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: prelude;
+    src: url(Fonts/PreludeFLF-Bolditalic.ttf);
+    font-weight: bold;
+}
+/*course colors*/
+.blue{
+    background:rgba(0,0,255,0.5);
+}
+.red{
+    background: rgba(255,5,50,0.7);
+}
+.green{
+    background:  rgba(0,128,0,0.7);
+}
+.yellow{
+    background:rgba(255,255,0,0.7);
+}
+body {
+    background: rgba(157,101,122, 1);
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    margin-left:4em;
+    margin-right:4em;
+}
+h1 {
+    font-family: 'prelude-l', 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 10px;
+    letter-spacing: 0.1em;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    margin-top:80px;
+}
+.button1{
+    background:grey;
+}
+h2,h3{
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-size: 1.6em;
+}
+h4{
+    font-family: 'prelude-l', 'Montserrat', sans-serif;
+    color: rgba(157,101,122, 1);
+    font-size: 250%;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin:10px;
+    padding-bottom:0px;
+}
+
+.navbar {
+    background-color: rgba(90, 0, 34, 0.6);
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Fira Sans', 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: none;
+    border-bottom: 2px solid white;
+}
+
+.nav.navbar-nav li a {
+    letter-spacing: 0.2em;
+    opacity: 1;
+    font-size: 150%;
+}
+
+nav a:hover {
+    font-weight: 400;
+    color: white;
+    border-bottom: 2px solid white;
+    border-bottom-color: white;
+    cursor: pointer;
+}
+
+.nav.navbar-nav li a:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.dropdown-menu {
+    background-color: rgba(90, 0, 34, 0.6);
+}
+
+.dropdown-menu li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav .dropdown.open a:focus {
+    background-color: rgba(90, 0, 34, 1);
+}
+.Two{
+    margin:20px;
+    padding:1em;
+    margin-bottom:40px;
+}
+.desc{
+    background: white;
+    color:rgba(157,101,122, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+.desc p{
+    padding:8px;
+}
+.boxCal{
+    margin-right: auto; margin-left: auto;
+}
+.footer {
+    height: auto;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer p {
+    height: auto;
+    margin: 2px;
+    padding: 2px;
+    color: black;
+    font-size: 1.2em;
+}
+.navbar {
+    min-height: 5px;
+}
+
+.mas {
+    display: none;
+    /*massages are not displayed initially
+	they will appear on button click*/
+}
+
+.butDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mButton {
+    padding: 5px;
+    margin: 5px;
+}
+
+.contact {
+    /*padding-left:25%;*/
+    font-size: 0.9em;
+}
+
+.link {
+    color: rgba(157, 101, 122, 0.9);
+}
+
+.link2 {
+    color: gainsboro;
+}
+@media screen and (max-width:1800px) {
     body {
-        background: rgba(157,101,122, 1);
+        margin-left:0em;
+        margin-right:0em;
     }
-    .boxCal{
-        margin-right: auto; margin-left: auto;
+}
+@media screen and (max-width:800px) {
+    h2,h3{
+        font-size: 1.6em;
     }
-    .blue{
-        background:rgba(0,0,255,0.5);
-    }
-    .red{
-        background: rgba(255,0,0,0.5);
-    }
-    .green{
-       background:  rgba(0,128,0,0.7);
-    }
-    .yellow{
-        background:rgba(255,255,0,0.7);
-    }
+}
   

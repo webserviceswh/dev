@@ -117,6 +117,9 @@ h5 {
     text-align: center;
     color: rgba(157, 101, 122, 0.9);
 }
+.small{
+    font-size: 0.8 em;
+}
 
 #mandala {
     position: absolute;
@@ -265,6 +268,7 @@ nav a:hover {
 #descr {
     transform: translate(-60%);
     overflow: visible;
+    padding:1em;
     !important
 }
 
@@ -316,7 +320,6 @@ nav a:hover {
 
 
 /*Yoga*/
-
 #yoga {
     background: url('Fotos/yoga.JPG') no-repeat center center;
     background-position: right 0em top 60px;
@@ -325,8 +328,7 @@ nav a:hover {
 #ayu {
     background: url('Fotos/Ayurveda.jpg') no-repeat center center;
     background-position: right 0em top 60px;
-    height: 700px;
-    /*Foto is smaller than yoga pic*/
+    height: 700px; /*Foto is smaller than yoga pic*/
 }
 
 #ernaehrung {
@@ -346,10 +348,6 @@ nav a:hover {
 .full {
     margin-top: 80px;
     width: 100%;
-}
-
-#AboutMe {
-    margin-bottom: 50px;
 }
 
 .zeiten {
@@ -437,7 +435,26 @@ nav a:hover {
 .link2 {
     color: gainsboro;
 }
+#petra{
+    float:right;
+    background: url('Fotos/petra.jpg')no-repeat center center;
+    background-position: left 0em top 60px;
+}
+#AboutMe {
+    float:right;
+    height:auto;
+    padding:20px;
+    margin-bottom:40px;
 
+}
+#AboutMe h3,p{
+    
+}
+.outer{
+    height:800px;
+    display:flex;
+    justify-content: center;
+}
 
 /*media screens*/
 
@@ -456,6 +473,9 @@ nav a:hover {
     }
     #descrEr {
         transform: translate(+40%);
+    }
+    #mandala{
+        height:60%;
     }
 }
 
@@ -497,6 +517,9 @@ nav a:hover {
     }
     .zeiten {
         padding-top: 50px;
+    }
+    #mandala{
+        height:55%;
     }
 }
 
@@ -550,6 +573,8 @@ nav a:hover {
     .one {
         margin-left: 0em;
         margin-right: 0em;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .outer {
         padding-left: 0px;
