@@ -164,7 +164,7 @@ small{
     color: rgba(90, 0, 34, 1);
 }
 .desc{
-    background: white;
+    background: rgba(255,255,255,0.8);
     color:rgba(157,101,122, 1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;

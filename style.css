@@ -115,7 +115,7 @@ h5 {
     letter-spacing: 0.1em;
     font-size: 1.2em;
     text-align: center;
-    color: rgrgba(157, 101, 122,0.9));
+    color: rgrgba(157, 101, 122,0.9);
 }
 .small, small{
     font-size: 0.8 em;
@@ -268,20 +268,18 @@ nav a:hover {
 #descr {
     transform: translate(-50%);
     overflow: visible;
-    padding:1em;
-    !important
+    padding:1em; !important
 }
 
 #descrEr {
     transform: translate(+50%);
     overflow: visible;
-    padding:1em;
-    !important
+    padding:1em; !important
 }
 
 .linkButton {
     background-color: rgba(90, 0, 34, 1);
-    border: none;
+    border:none;
 }
 
 
@@ -364,7 +362,7 @@ nav a:hover {
 
 .kurszeiten {
     text-align: center;
-    border: 1px solid rgrgba(157, 101, 122,0.9));
+    border: 1px solid rgba(157, 101, 122,0.9);
 }
 
 .kurszeiten li {
@@ -430,7 +428,7 @@ nav a:hover {
 }
 
 .link {
-    color: rgrgba(157, 101, 122,0.9));
+    color: rgrgba(157, 101, 122,0.9);
 }
 
 .link2 {
