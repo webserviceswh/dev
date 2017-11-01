@@ -115,9 +115,9 @@ h5 {
     letter-spacing: 0.1em;
     font-size: 1.2em;
     text-align: center;
-    color: rgba(157, 101, 122, 0.9);
+    color: rgrgba(157, 101, 122,0.9));
 }
-.small{
+.small, small{
     font-size: 0.8 em;
 }
 
@@ -232,18 +232,18 @@ nav a:hover {
 }
 
 .overlay {
-    background: rgb(157, 101, 122);
-    opacity: 0.8;
+    background: rgba(157, 101, 122,0.8);
     height: auto;
-    width: 800px;
+    width: 900px;
     margin: auto;
+}
+.overlay p{
+    opacity: 1;
 }
 
 .overlay h3 {
     font-size: 1.8em;
 }
-
-
 /*Ayurveda Yoga*/
 
 .main-left.ayu {
@@ -266,20 +266,21 @@ nav a:hover {
 }
 
 #descr {
-    transform: translate(-60%);
+    transform: translate(-50%);
     overflow: visible;
     padding:1em;
     !important
 }
 
 #descrEr {
-    transform: translate(+60%);
+    transform: translate(+50%);
     overflow: visible;
+    padding:1em;
     !important
 }
 
 .linkButton {
-    background-color: rgba(90, 0, 34, 0.6);
+    background-color: rgba(90, 0, 34, 1);
     border: none;
 }
 
@@ -288,10 +289,10 @@ nav a:hover {
 
 #massagen,
 #AboutMe {
-    background-image: linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -webkit-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -moz-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
-    background-image: -ms-linear-gradient(top, transparent 60px, rgba(157, 101, 122, 0.9) 60px, rgba(157, 101, 122, 0.9) 100%);
+    background-image: linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
+    background-image: -webkit-linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
+    background-image: -moz-linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
+    background-image: -ms-linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
     text-align: center;
 }
 
@@ -306,7 +307,7 @@ nav a:hover {
     font-size: 1.8em;
 }
 
-#massagen p,
+#ernaehrung p,#yoga p, #ayu p,#massagen p,
 #AboutMe p {
     font-size: 0.8em;
 }
@@ -322,13 +323,13 @@ nav a:hover {
 /*Yoga*/
 #yoga {
     background: url('Fotos/yoga.JPG') no-repeat center center;
-    background-position: right 0em top 60px;
+    background-position: left 0em top 60px;
 }
 
 #ayu {
     background: url('Fotos/Ayurveda.jpg') no-repeat center center;
     background-position: right 0em top 60px;
-    height: 700px; /*Foto is smaller than yoga pic*/
+    height: 750px; /*Foto is smaller than yoga pic*/
 }
 
 #ernaehrung {
@@ -363,7 +364,7 @@ nav a:hover {
 
 .kurszeiten {
     text-align: center;
-    border: 1px solid rgba(157, 101, 122, 0.9);
+    border: 1px solid rgrgba(157, 101, 122,0.9));
 }
 
 .kurszeiten li {
@@ -429,50 +430,45 @@ nav a:hover {
 }
 
 .link {
-    color: rgba(157, 101, 122, 0.9);
+    color: rgrgba(157, 101, 122,0.9));
 }
 
 .link2 {
     color: gainsboro;
 }
+.outer{
+    height:800px;
+}
 #petra{
-    float:right;
+    height: auto !important;
+    height: 750px;
+    min-height:750px;
     background: url('Fotos/petra.jpg')no-repeat center center;
     background-position: left 0em top 60px;
 }
 #AboutMe {
-    float:right;
     height:auto;
+    min-height:750px;    
     padding:20px;
     margin-bottom:40px;
-
 }
-#AboutMe h3,p{
-    
-}
-.outer{
-    height:800px;
-    display:flex;
-    justify-content: center;
-}
-
 /*media screens*/
 
 @media screen and (max-width:1830px) {
-    #descr {
-        transform: translate(-50%);
-    }
-    #descrEr {
-        transform: translate(+50%);
-    }
-}
-
-@media screen and (max-width:1670px) {
     #descr {
         transform: translate(-40%);
     }
     #descrEr {
         transform: translate(+40%);
+    }
+}
+
+@media screen and (max-width:1670px) {
+    #descr {
+        transform: translate(-30%);
+    }
+    #descrEr {
+        transform: translate(+30%);
     }
     #mandala{
         height:60%;
@@ -481,10 +477,10 @@ nav a:hover {
 
 @media screen and (max-width:1588px) {
     #descr {
-        transform: translate(-30%);
+        transform: translate(-20%);
     }
     #descrEr {
-        transform: translate(+30%);
+        transform: translate(+20%);
     }
 }
 
@@ -513,7 +509,7 @@ nav a:hover {
     }
     body {
         background: white;
-        font-size: 190%;
+        font-size: 200%;
     }
     .zeiten {
         padding-top: 50px;
@@ -521,8 +517,28 @@ nav a:hover {
     #mandala{
         height:55%;
     }
+    .outer{
+        height:600px;
+    }
+    #petra{
+        height: auto !important;
+        min-height:736px;
+    }
+    #AboutMe {
+        height:auto;
+        min-height:736px;
+        padding-top:100px;
+    }
+    #AboutMe h3{
+        margin-bottom:30px;
+    }
 }
 
+@media screen and (max-width:1094px) {
+    #AboutMe {
+        padding-top:60px;
+    }
+}
 @media screen and (max-width:992px) {
     .main-right.yoga,
     .main-right.ernaehrung,
@@ -551,6 +567,9 @@ nav a:hover {
         height: auto;
         width: 100%;
     }
+    #AboutMe {
+        padding-top:30px;
+    }
 }
 
 @media screen and (max-width:906px) {
@@ -563,6 +582,9 @@ nav a:hover {
     #ernaehrung {
         background: none;
         height: auto;
+    }
+    .overlay{
+        opacity: 1;
     }
     #descr,
     #descrEr {
@@ -581,7 +603,37 @@ nav a:hover {
         padding-right: 0px;
     }
 }
+@media screen and (max-width:845px) {
+    #AboutMe {
+        padding-top:5px;
+    }
+    #AboutMe h3,p{
+        margin-bottom:10px;
+        padding-bottom:10px;
+    }
+    #AboutMe p{
+        margin-bottom:10px;
+        padding-bottom:0px;
+    }
+}
 
+@media screen and (max-width:767px) {
+    #petra{
+        background-position: center top 50px;
+    }
+    #AboutMe{
+        height:auto;
+        min-height:300px;
+        padding-bottom:35px;
+    }
+    .outer{
+        height:100%;
+    }
+    .footer {
+        margin:auto;
+        height:auto;
+    }
+}
 @media screen and (max-width:750px) {
     .navbar {
         background-color: rgba(90, 0, 34, 0.9);
@@ -618,5 +670,8 @@ nav a:hover {
         padding-top: 49px;
         margin: 0px;
         word-wrap: break-word;
+    }
+    #AboutMe{
+        padding-bottom:50px;
     }
 }

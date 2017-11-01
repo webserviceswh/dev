@@ -150,6 +150,19 @@ nav a:hover {
     padding:1em;
     margin-bottom:40px;
 }
+.one p{
+    font-size:130%;
+    margin-top:50px;
+    color: white;
+    text-align:center;
+    letter-spacing: 0.6px;
+}
+small{
+    font-size:85%;
+}
+.anmeldung{
+    color: rgba(90, 0, 34, 1);
+}
 .desc{
     background: white;
     color:rgba(157,101,122, 1);
@@ -157,7 +170,14 @@ nav a:hover {
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-   
+    text-align:center;
+    font-size:120%;
+    letter-spacing: 0.4px;
+}
+.yoga-beginner{
+    height:400px;
+    background: url(Fotos/yoga.JPG) center no-repeat;
+    background-size:40%;
 }
 .desc p{
     padding:8px;
