@@ -42,15 +42,16 @@
 				</nav>
 		<div class="container-fluid one">
 			<h1>Sanfte Wege</h1>
+			<h5>"Friede beginnt damit, dass jeder von uns sich jeden Tag um seinen Körper und seinen Gesit kümmert"<br>(Tich Nhat Hanh)</h5>
 			<p>
 				Ein Kursblock umfasst zwölf Yogaeinheiten mit jeweils 1,5 Stunden.<br><br>
 				Preise:<br>
-				<small>12 x 1,5 Stunden € 160,00<br>
-				6 x 1,5 Stunden € 85,00<br><br></small>
-				Bitte um Anmeldung unter der Telefonnummer: 0043 664 73606994 oder unter der E-Mail Adresse: 
+				12 x 1,5 Stunden € 160,00<br>
+				6 x 1,5 Stunden € 85,00<br><br>
+				Bitte um Anmeldung: 0043 664 73606994 oder unter: 
 				<a class="anmeldung" href="mailto:petra@ayurveda-yoga.at">petra@ayurveda-yoga.at</a> <br>
-				<small>Gerne kannst du auch 1 mal kostenlos reinschnuppern! Hast du gefallen gefunden ist ein Quereinstieg jederzeit möglich. (Kurskosten werden dann alliquot gerechnet!)</small><br><br>
-				Bitte kommt zu den Kursstunden ein paar Minuten vor Beginn. Ihr habt dann noch Zeit euch in Ruhe umzuziehen und eure Matte auszurollen.
+				Gerne kannst du auch ein Mal kostenlos reinschnuppern! Hast du gefallen gefunden, ist ein Quereinstieg jederzeit möglich. (Kurskosten werden dann alliquot gerechnet!)<br><br>
+				Bitte kommt zu den Kursstunden ein paar Minuten vor Beginn. Ihr habt dann noch Zeit, euch in Ruhe umzuziehen und eure Matte auszurollen.
 			</p>
 		</div>
 		<div class="container boxCal">	
@@ -77,15 +78,15 @@
 					<h4>Yoga für Anfänger und leicht Forgeschrittene</h4>
 					<p>
 						Alle Körperübungen werden mit Achtsamkeit, Konzentration und in Übereinstimmung mit dem Atem ausgeführt. Dabei werden die Haltungen so aufeinander
-						aufgebaut, dass eine gezielte Stärkung und Aktivität des Körpers, des Atems und des Geistes möglich sind. Das Ziel ein freier Geist in einem gesunden Körper, denn jede Übung ist auch eine Übung des Geistes!
+						aufgebaut, dass eine gezielte Stärkung und Aktivität des Körpers, des Atems und des Geistes möglich sind. Ziel ist es, einen freien Geist in einem gesunden Körper zu erlangen, denn jede Übung ist auch eine Übung des Geistes!
 					</p>
 					<div class="yoga-beginner"> <!-- Yoga beginner pic -->
 					</div>
 					<p>
 						Was ist mitzubringen:<br>
-						<small>Was die Schuhe für einen Läufer ist die Yogamatte für den Yogapraktizierenden. Die Matte sollte rutschfest und nicht zu dick sein, gerne bin ich euch bei der 
+						Was die Schuhe für einen Läufer sind, ist die Yogamatte für den Yogapraktizierenden. Die Matte sollte rutschfest und nicht zu dick sein. Gerne bin ich euch bei der 
 								Auswahl behilflich.<br>
-								Wir üben barfuß und idealerweise in enganliegender Sportkleidung. Blöcke und Gurte werden von mir während der Yogastunden zur Verfügung gestellt.<br><br></small>
+								Wir üben barfuß und idealerweise in enganliegender Sportkleidung. Blöcke und Gurte werden von mir während der Yogastunden zur Verfügung gestellt.<br><br>
 					</p>
 				</div>
 				<!--<div class="col-xs-12 col-sm-12 col-md-2" >
@@ -143,31 +144,32 @@
 		</script>
 		 <script src="bootstrap/js/bootstrap.min.js"></script>
 		 <script>
-			 // smooth scrolling
-			 $(function() {
-				 $('a[href*=\\#]:not([href=\\#])').click(function() {
-					 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-						 var target = $(this.hash);
-						 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-						 if (target.length) {
-							 $('html,body').animate({
-								 scrollTop: target.offset().top
-							 }, 1000);
-							 return false;
-						 }
-					 }
-				 });
-			 });
-			 //set and remove active class
-			 $(".nav a").on("click", function() {
-				 $(".nav").find(".active").removeClass("active");
-				 $(this).parent().addClass("active");
-			 });
-			 $('#mButton').click(function() {
-				 $('.mas').toggle('slow', function() {
-					 // Animation complete. 
-				 });
-			 });
-		 </script>
+        // smooth scrolling
+        $(function() {
+            $('a[href*=\\#]:not([href=\\#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        //set and remove active class
+        $(".nav a").on("click", function() {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        $('#mButton').click(function() {
+            $('.mas').toggle('slow', function() {
+                // Animation complete. 
+            });
+        });
+        
+    </script>
 	</body>
 </html>
