@@ -79,6 +79,9 @@ h1 {
     font-weight: 200;
     font-size: 150%;
 }
+#headline{
+    font-size:1.7em;
+}
 
 h2 {
     font-family: 'prelude-l', 'Montserrat', sans-serif;
@@ -131,15 +134,6 @@ h5 {
     margin: 0px;
     padding: 0px;
 }
-
-
-/*.border{
-	padding:2px;
-	box-shadow:0px 0px 0px 1px black inset;
-}*/
-
-
-/* Link */
 
 .navbar {
     background-color: rgba(90, 0, 34, 0.6);
@@ -286,7 +280,7 @@ nav a:hover {
 /*massagen und ernährung*/
 
 #massagen,
-#AboutMe {
+#AboutMe,#contact {
     background-image: linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
     background-image: -webkit-linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
     background-image: -moz-linear-gradient(top, transparent 60px, rgba(157, 101, 122,1) 60px, rgba(157, 101, 122,1) 100%);
@@ -295,18 +289,19 @@ nav a:hover {
 }
 
 #massagen h3,
-#AboutMe h3 {
+#AboutMe h3,
+#contact h3 {
     margin-top: 70px;
 }
 
 #massagen h3,
 #ernaehrung h3,
-#AboutMe h3 {
+#AboutMe h3,#contact h3 {
     font-size: 1.8em;
 }
 
 #ernaehrung p,#yoga p, #ayu p,#massagen p,
-#AboutMe p {
+#AboutMe p,#contact p {
     font-size: 0.8em;
 }
 
@@ -334,11 +329,9 @@ nav a:hover {
     background: url('Fotos/Ernaehrung.jpg')no-repeat center center;
     background-position: right 0em top 60px;
 }
-
 .center {
     text-align: center;
 }
-
 .left {
     text-align: left;
     margin-left: 50px;
@@ -424,18 +417,23 @@ nav a:hover {
 
 .contact {
     /*padding-left:25%;*/
-    font-size: 0.9em;
+    padding-top:40px;
+    padding-bottom:20px;
+    font-size: 1em;
+    height:auto;
 }
 
 .link {
-    color: rgrgba(157, 101, 122,0.9);
+    color: rgba(157, 101, 122,0.9);
 }
 
 .link2 {
     color: gainsboro;
 }
 .outer{
-    height:800px;
+    height:750px;
+    padding-bottom:0px;
+    margin-bottom:0px;
 }
 #petra{
     height: auto !important;
@@ -448,7 +446,12 @@ nav a:hover {
     height:auto;
     min-height:750px;    
     padding:20px;
-    margin-bottom:40px;
+    padding-bottom:0px;
+}
+img{
+    padding-left:10px;
+    height:28px;
+    width:38px;
 }
 /*media screens*/
 
@@ -489,7 +492,7 @@ nav a:hover {
         padding-right: 3em;
     }
     #kurse,
-    #massagen {
+    #massagen{
         padding: 1em;
     }
     #yoga,
@@ -516,7 +519,7 @@ nav a:hover {
         height:55%;
     }
     .outer{
-        height:600px;
+        height:740px;
     }
     #petra{
         height: auto !important;
@@ -640,6 +643,11 @@ nav a:hover {
         background-color: white;
     }
 }
+@media screen and (max-width:689px) {
+    #contact{
+        margin-bottom:20px;
+    }
+}
 
 @media screen and (max-width:575px) {
     .main-left {
@@ -671,5 +679,10 @@ nav a:hover {
     }
     #AboutMe{
         padding-bottom:50px;
+    }
+}
+@media screen and (max-width:439px) {
+    #contact{
+        margin-bottom:35px;
     }
 }
